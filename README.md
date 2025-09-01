@@ -1,4 +1,14 @@
 # CVND---Image-Captioning-Project
+This project implements an image captioning model using a convolutional neural network (CNN) as an encoder and a recurrent neural network (RNN) as a decoder. The model generates natural language descriptions of images and is evaluated using standard captioning metrics like BLEU, METEOR, ROUGE-L, and CIDEr. Model is run in MS COCO dataset.
+
+
+# Table of Contante
+The project is structured as a series of Jupyter notebooks that are designed to be completed in sequential order (`0_Dataset.ipynb, 1_Preliminaries.ipynb, 2_Training.ipynb, 3_Inference.ipynb`).
+
+- 0_Dataset.ipynb -- initialisation of COCO API dataset
+- 1_Preliminaries.ipynb -- dataset preprocessing + initialisation of encoder and decoder
+- 2_Training.ipynb -- model training + validation
+- 3_Inference.ipynb -- inference on single images
 
 # Instructions  
 1. Clone this repo: https://github.com/cocodataset/cocoapi  
@@ -24,10 +34,9 @@ cd ..
   * **2014 Val images [41K/6GB]** (extract the val2014 folder and place at location cocoapi/images/val2014/)
   * **2014 Test images [41K/6GB]** (extract the test2014 folder and place at location cocoapi/images/test2014/)
 
-4. The project is structured as a series of Jupyter notebooks that are designed to be completed in sequential order (`0_Dataset.ipynb, 1_Preliminaries.ipynb, 2_Training.ipynb, 3_Inference.ipynb`).
 5. Install tensorboard (It is used in 2_Training.ipynb)
 ```
 pip install tensorboard 
 ```
 6. For image captioning evaluation (2_Training.ipynb) you will also need to install open-source library - https://github.com/tylin/coco-caption 
-   
+
