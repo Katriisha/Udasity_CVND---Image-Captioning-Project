@@ -2,7 +2,7 @@
 This project implements an image captioning model using a convolutional neural network (CNN) as an encoder and a recurrent neural network (RNN) as a decoder. The model generates natural language descriptions of images and is evaluated using standard captioning metrics like BLEU, METEOR, ROUGE-L, and CIDEr. Model is run in MS COCO dataset.
 
 
-# Table of Contants
+# Table of Content
 The project is structured as a series of Jupyter notebooks that are designed to be completed in sequential order (`0_Dataset.ipynb, 1_Preliminaries.ipynb, 2_Training.ipynb, 3_Inference.ipynb`).
 
 - 0_Dataset.ipynb -- initialisation of COCO API dataset
